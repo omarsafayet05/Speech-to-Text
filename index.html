@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Speech to Text</title>
+  </head>
+  <body>
+    <div class="container">
+      <p class="header">Speech to Text</p>
+      <div class="settings">
+        <div class="language">
+          <p>Language:</p>
+          <select id="language"></select>
+        </div>
+      </div>
+
+      <div class="seperator"></div>
+      <button class="btn record">
+        <div class="icon">
+          <i class="bx bxs-microphone-alt"></i>
+          <i class="bx bx-loader bx-spin"></i>
+        </div>
+        <p>Start Listening</p>
+      </button>
+      <p class="resultTitle">Result:</p>
+      <div class="result" spellcheck="false">
+        <p class="resultText"></p>
+      </div>
+      <div class="seperator"></div>
+      <div class="buttons">
+        <button class="btn clear">Clear</button>
+        <button class="btn download" disabled>Download</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="languages.js"></script>
+  </body>
+</html>
